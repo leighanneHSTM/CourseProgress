@@ -1,0 +1,33 @@
+
+version: 2
+
+# models:
+#   - name: my_first_dbt_model
+#     description: "A starter dbt model"
+#     columns:
+#       - name: id
+#         description: "The primary key for this table"
+#         tests:
+#           - unique
+#           - not_null
+
+#   - name: my_second_dbt_model
+#     description: "A starter dbt model"
+#     columns:
+#       - name: id
+#         description: "The primary key for this table"
+#         tests:
+#           - unique
+#           - not_null
+sources:
+  - name: STG_COURSE_PROGRESS
+    description: 'tbl representing staged data from orig'
+    database: LAD_DEMO
+    schema: STAGING
+  
+    tables:
+      - name: STG_COURSE_PROGRESS
+        description: 'course progress loaded from s3 buckets'
+
+      - name: STG_DEMOGRAPHICS
+        description: 'demographics loaded from s3 buckets'

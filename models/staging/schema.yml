@@ -31,3 +31,6 @@ sources:
 
       - name: STG_DEMOGRAPHICS
         description: 'demographics loaded from s3 buckets'
+
+      - name: STG_ASSIGN_PROGRESS
+        description: 'assignment loaded from s3 buckets'        

@@ -33,4 +33,7 @@ sources:
         description: 'demographics loaded from s3 buckets'
 
       - name: STG_ASSIGN_PROGRESS
-        description: 'assignment loaded from s3 buckets'        
+        description: 'assignment loaded from s3 buckets' 
+               
+      - name: STG_CERTIFICATIONS
+        description: 'certification data from test box datasource'          
